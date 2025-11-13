@@ -6,3 +6,6 @@ Preliminary Data Was Taken From Kaggle:
 
 Final Data Was Taken From Kaggle:
 [Data](https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset?select=CEAS_08.csv)
+
+Project Video:
+[Video](https://drive.google.com/file/d/1log1u5aMiLTk7dAXNlT7PjAWsG7_OuZi/view?usp=sharing)
