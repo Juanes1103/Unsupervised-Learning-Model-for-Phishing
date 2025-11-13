@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #2d3436;
+    font-weight: 600;
+}
+
+.result {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.loading {
+    color: #6c757d;
+}
+
+.success {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.error {
+    color: #dc3545;
+    font-weight: 600;
+}

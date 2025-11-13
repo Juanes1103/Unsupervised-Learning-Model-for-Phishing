@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Phishing Email Grouping</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Email Clasification </h1>
+        <form id="emailForm">
+            <!--SENDER-->
+            <div class="mb-3">
+                <label class="form-label">Sender</label>
+                <input type="text" class="form-control" id="sender" required 
+                oninvalid="this.setCustomValidity('Invalid Input!')"
+                oninput="this.setCustomValidity('')">
+            </div>
+
+            <!--RECEIVER-->
+            <div class="mb-3">
+                <label class="form-label">Receiver</label>
+                <input type="text" class="form-control" id="receiver" required 
+                oninvalid="this.setCustomValidity('Invalid Input!')"
+                oninput="this.setCustomValidity('')">
+            </div>
+
+            <!--SUBJECT-->
+            <div class="mb-3">
+                <label class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" required 
+                oninvalid="this.setCustomValidity('Invalid Input!')"
+                oninput="this.setCustomValidity('')">
+            </div>
+
+            <!--BODY-->
+            <div class="mb-3">
+                <label class="form-label">Body</label>
+                <textarea class="form-control" id="body" rows="6" required 
+                oninvalid="this.setCustomValidity('Invalid Input!')"
+                oninput="this.setCustomValidity('')"></textarea>
+            </div>
+
+            <!--URL-->
+            <div class="mb-3">
+                <label class="form-label">URL</label>
+                <input type="text" class="form-control" id="url" maxlength="1" pattern="[01]" required
+                oninvalid="this.setCustomValidity('Invalid Input!')"
+                oninput="this.setCustomValidity('')">
+                <div class="form-text"><strong>1</strong> For URL presence, <strong>0</strong> For URL absence</div>
+            </div>
+
+            <!--SUBMIT BUTTON-->
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+        </form>
+        
+        <!--RESULT-->
+        <div id="resultContainer" class="mt-4"></div>
+    </div>
+
+    <script src="/static/index.js"></script>
+</body>
+</html>
